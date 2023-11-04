@@ -22,6 +22,6 @@ public class Test
             TestPriorityQueue.Test();
         if (testSimulation)
             TestSimulation.Test();
-        
+
     }
 }

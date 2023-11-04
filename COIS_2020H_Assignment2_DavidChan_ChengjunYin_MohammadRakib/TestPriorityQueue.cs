@@ -8,6 +8,7 @@ public class TestPriorityQueue
 {
     public static void Test()
     {
-        PriorityQueue<T> prior1 = new PriorityQueue<T>();
+        //Testing PriorityQueue
+        //PriorityQueue<T> prior1 = new PriorityQueue<T>();
     }
 }
