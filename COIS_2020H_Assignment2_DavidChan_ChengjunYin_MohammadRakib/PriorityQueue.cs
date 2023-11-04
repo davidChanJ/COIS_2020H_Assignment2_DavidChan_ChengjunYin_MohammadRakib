@@ -7,11 +7,16 @@ public class PriorityQueue<T> where T : IComparable
     //Attributes
     private List<T> heap;       //The list doing the heap
 
-    //Constructor:
+    //Constructors:
     //List for PriorityQueue, Enqueue, Dequeue
-    public PriorityQueue()
+    public PriorityQueue()  //1st Constructor, default
     {
         heap = new List<T>();
+    }
+    
+    public PriorityQueue(List<T> heap) //2nd Constructor, with list
+    {
+        this.heap = heap;
     }
 
     //Peek and RemoveAt methods
@@ -28,7 +33,7 @@ public class PriorityQueue<T> where T : IComparable
     //Removing the value depending on index int i's value.
     public void RemoveAt(int i)
     {
-        if (i < 0 || i > heap.Count)
+        if (i < 0 || i > heap.Count) //Using
         {
             throw new ArgumentOutOfRangeException("The range is not valid!");
         }
@@ -54,10 +59,10 @@ public class PriorityQueue<T> where T : IComparable
         while (child > 1)
         {
             parent = child / 2; //Makes sense for dividing
-            if (heap[child].CompareTo())  //Check if the child has higher priority than parent
-            {
-                //Swap the items, in concept of binary heap
-            }
+            //if (heap[child].CompareTo())  //Check if the child has higher priority than parent
+            //{
+            //    //Swap the items, in concept of binary heap
+            //}
         }
     }
     public void HeapifyDown(int i)

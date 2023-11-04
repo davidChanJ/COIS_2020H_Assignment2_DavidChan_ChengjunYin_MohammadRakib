@@ -22,7 +22,6 @@ public class TestEvent
 
             Console.WriteLine(event1.Patient + " " + event1.eventType + " " + event1.eventTime);
 			Console.WriteLine(event2.Patient + " " + event2.eventType + " " + event2.eventTime + event2.assignedDoctor);
-
 		}
 
 	}
